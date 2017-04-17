@@ -1,5 +1,5 @@
 <html lang="en"><head>
-    <title>Code coverage report for node-npmtest-riot/riot/riot.js</title>
+    <title>Code coverage report for node-npmtest-riot/node_modules/riot/riot.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,23 +192,23 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-riot">npmtest-riot (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-riot/riot/riot.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-riot/node_modules/riot/riot.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">35.84% <small>(396 / 1105)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">35.87% <small>(396 / 1104)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">24.72% <small>(199 / 805)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">24.69% <small>(199 / 806)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
         Functions: <span class="metric">24.68% <small>(39 / 158)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">37.41% <small>(376 / 1005)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">37.45% <small>(376 / 1004)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric">174 statements, 27 functions, 178 branches</span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> » <a href="index.html">node-npmtest-riot/riot/</a> » riot.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-riot/node_modules/riot/</a> » riot.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
@@ -2961,9 +2961,7 @@
 2747
 2748
 2749
-2750
-2751
-2752</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+2750</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -4160,7 +4158,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -4191,15 +4195,10 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -5289,10 +5288,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -5714,7 +5710,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* Riot v3.4.1, @license MIT */
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* Riot v3.4.2, @license MIT */
 (function (global, factory) {
 	typeof exports === 'object' &amp;&amp; typeof module !== 'undefined' ? factory(exports) :
 <span class="branch-1 cbranch-no" title="branch not covered">	typeof define === 'function' &amp;&amp; define.amd ? define(['exports'], factory) :</span>
@@ -6910,6 +6906,12 @@ var settings$1 = extend(Object.create(brackets.settings), {
     }
   }
 &nbsp;
+  // remove original attribute
+<span class="cstat-no" title="statement not covered">  if (expr.attr &amp;&amp; (!expr.isAttrRemoved || !value)) {</span>
+<span class="cstat-no" title="statement not covered">    remAttr(dom, expr.attr);</span>
+<span class="cstat-no" title="statement not covered">    expr.isAttrRemoved = true;</span>
+  }
+&nbsp;
   // for the boolean attributes we don't need the value
   // we can convert it to checked=true to checked=checked
 <span class="cstat-no" title="statement not covered">  if (expr.bool) { <span class="cstat-no" title="statement not covered">value = value ? attrName : false; </span>}</span>
@@ -6944,11 +6946,6 @@ var settings$1 = extend(Object.create(brackets.settings), {
 <span class="cstat-no" title="statement not covered">    return</span>
   }
 &nbsp;
-  // remove original attribute
-<span class="cstat-no" title="statement not covered">  if (!expr.isAttrRemoved || !value) {</span>
-<span class="cstat-no" title="statement not covered">    remAttr(dom, expr.attr);</span>
-<span class="cstat-no" title="statement not covered">    expr.isAttrRemoved = true;</span>
-  }
 &nbsp;
   // event handler
 <span class="cstat-no" title="statement not covered">  if (isFunction(value)) {</span>
@@ -7731,7 +7728,7 @@ var mixins_id = 0;
 <span class="cstat-no" title="statement not covered">  delete __TAG_IMPL[name];</span>
 }
 &nbsp;
-var version$1 = 'v3.4.1';
+var version$1 = 'v3.4.2';
 &nbsp;
 &nbsp;
 var core = Object.freeze({
@@ -8047,9 +8044,6 @@ var __uid = 0;
       }
 &nbsp;
 <span class="cstat-no" title="statement not covered">      if (p &amp;&amp; !mustKeepRoot) { <span class="cstat-no" title="statement not covered">p.removeChild(el); </span>}</span>
-&nbsp;
-      // the data-is attributes isn't needed anymore, remove it
-<span class="cstat-no" title="statement not covered">      remAttr(el, IS_DIRECTIVE);</span>
     }
 &nbsp;
 <span class="cstat-no" title="statement not covered">    if (this.__.virts) {</span>
@@ -8469,7 +8463,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 </tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 21:42:27 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 15:22:29 GMT+0000 (UTC)</div>
 </div>
 
 
