@@ -1,4 +1,7 @@
-# test coverage for  [riot (v3.4.2)](http://riotjs.com/)  [![npm package](https://img.shields.io/npm/v/npmtest-riot.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-riot) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-riot.svg)](https://travis-ci.org/npmtest/node-npmtest-riot)
+# npmtest-riot
+
+#### basic test coverage for  [riot (v3.4.2)](http://riotjs.com/)  [![npm package](https://img.shields.io/npm/v/npmtest-riot.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-riot) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-riot.svg)](https://travis-ci.org/npmtest/node-npmtest-riot)
+
 #### A React-like user interface micro-library
 
 [![NPM](https://nodei.co/npm/riot.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/riot)
